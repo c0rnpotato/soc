@@ -1,0 +1,19 @@
+; scatter.sct — HY-SoC Lab0 scatter file (Arm Compiler 6)
+;
+; Single SRAM 64 KB at 0x0000_0000
+;   Code + RO data + RW data + ZI (BSS) + Stack
+;
+; Memory map (lab0):
+;   0x0000_0000 .. 0x0000_FFFF : SRAM 64 KB
+
+LR_SRAM 0x00000000 0x00010000 {             ; load region: SRAM 64 KB
+
+  ER_SRAM 0x00000000 0x0000F800 {           ; execution region: ~62 KB
+    *.o (RESET, +First)                     ; vector table first
+    *(InRoot$$Sections)                     ; Arm library init
+    .ANY (+RO +RW +ZI)                      ; all remaining code/data
+  }
+
+  ARM_LIB_STACK 0x00010000 EMPTY -0x0800 {  ; 2 KB stack (grows down)
+  }
+}

@@ -1,0 +1,12 @@
+Dependencies for Project 'week5', Target 'Target_1': (DO NOT MODIFY !)
+CompilerVersion: 6240000::V6.24::ARMCLANG
+F (.\hy-soc_lab\common\cmsis\core_cm0.h)(0x69D0BB1F)()
+F (.\hy-soc_lab\common\cmsis\core_cmFunc.h)(0x69D0BB1F)()
+F (.\hy-soc_lab\common\cmsis\core_cmInstr.h)(0x69D0BB1F)()
+F (.\hy-soc_lab\edu\lab0_m0_sram\sw\arm\startup_cm0.S)(0x69DB20E3)(--target=arm-arm-none-eabi -mcpu=cortex-m0 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-mlittle-endian -gdwarf-4 -D__EVAL -MMD-IE:/MDK/ARM/Cortex_DFP/1.1.0/Device/ARMCM0/Include-D__UVISION_VERSION=543 -DARMCM0-o ./objects/startup_cm0_1.o)
+F (.\hy-soc_lab\edu\lab0_m0_sram\sw\test.c)(0x69D0BBA0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./hy-soc_lab/common/include -I ./hy-soc_lab/common/cmsis-IE:/MDK/ARM/Cortex_DFP/1.1.0/Device/ARMCM0/Include-D__UVISION_VERSION="543" -DARMCM0-o ./objects/test.o -MMD)
+I (hy-soc_lab\common\include\hy_soc.h)(0x69D9FD92)
+I (hy-soc_lab\common\cmsis\core_cm0.h)(0x69D0BB1F)
+I (hy-soc_lab\common\cmsis\core_cmInstr.h)(0x69D0BB1F)
+I (hy-soc_lab\common\cmsis\core_cmFunc.h)(0x69D0BB1F)
+F (.\hy-soc_lab\common\include\hy_soc.h)(0x69D9FD92)()
