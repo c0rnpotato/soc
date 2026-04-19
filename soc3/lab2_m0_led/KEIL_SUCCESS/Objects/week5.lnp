@@ -1,0 +1,7 @@
+--cpu Cortex-M0
+".\objects\startup_cm0_1.o"
+".\objects\test.o"
+--strict --scatter ".\hy-soc_lab\edu\lab0_m0_sram\sw\arm\scatter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\week5.map" -o .\Objects\week5.axf
