@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_hy_soc_func_impl.v" \
+"../../../../../soc_week4.srcs/sim_1/imports/tb/tb_hy_soc.v" \
+
+# Do not sort compile order
+nosort

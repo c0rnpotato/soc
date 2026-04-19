@@ -1,0 +1,128 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Apr 12 11:40:42 2026
+| Host         : c0rnpotato running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_control_sets -verbose -file hy_soc_control_sets_placed.rpt
+| Design       : hy_soc
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   173 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |    20 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    20 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              99 |           55 |
+| No           | No                    | Yes                    |             175 |          115 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             480 |          246 |
+| Yes          | No                    | Yes                    |             113 |           41 |
+| Yes          | Yes                   | No                     |              64 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------+--------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal        |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------+--------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                              | u_rst_sync/sys_sync[0]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | u_sram/E[0]                  | u_cm0/sys_sync_reg[1]          |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Numiu6         | u_cm0/u_logic/C5wpw6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Ltmiu6         | u_cm0/u_logic/C9wpw6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Kloax6_i_1_n_0 | u_cm0/u_logic/Ehpax6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Jsmiu6         | u_cm0/u_logic/Lpwax6_i_1_n_0   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Iixpw6_i_1_n_0 |                                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Gz6ax6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Gumiu6         | u_cm0/u_logic/C7wpw6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Etmiu6         | u_cm0/u_logic/Cbwpw6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Dzvpw6_i_1_n_0 |                                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Ydkiu6         | u_cm0/u_logic/Cfwpw6_i_1_n_0   |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Xsmiu6         | u_cm0/u_logic/V5vax6_i_1_n_0   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Stmiu6         | u_cm0/u_logic/O4sax6_i_1_n_0   |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/S5nax6_i_1_n_0 | u_cm0/u_logic/Nznax6_i_1_n_0   |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Cmlax6_i_1_n_0 | u_cm0/u_logic/Whmax6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Csmiu6         | u_cm0/u_logic/Eotax6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Zgzpw6_i_1_n_0 | u_cm0/u_logic/Tg0qw6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Rskax6_i_1_n_0 |                                |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Ztmiu6         | u_cm0/u_logic/De6bx6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/A5qax6_i_1_n_0 | u_cm0/u_logic/U0rax6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Qsmiu6         | u_cm0/u_logic/Cdwpw6_i_1_n_0   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/E05bx6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/S3mpw6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/I74bx6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/H4zax6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Sn4bx6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Yqzax6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Mfyax6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Wu3bx6_i_1_n_0 | u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Wnxax6_i_1_n_0 |                                |               12 |             24 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Ydkiu6         |                                |               18 |             26 |         1.44 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Zgzpw6_i_1_n_0 |                                |               12 |             26 |         2.17 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Etmiu6         |                                |               18 |             28 |         1.56 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Cmlax6_i_1_n_0 |                                |               16 |             28 |         1.75 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Kloax6_i_1_n_0 |                                |               13 |             28 |         2.15 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Csmiu6         |                                |               10 |             28 |         2.80 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Numiu6         |                                |               14 |             28 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Ltmiu6         |                                |               15 |             28 |         1.87 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Jsmiu6         |                                |               16 |             28 |         1.75 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Gumiu6         |                                |               15 |             28 |         1.87 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Ztmiu6         |                                |               14 |             28 |         2.00 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/A5qax6_i_1_n_0 |                                |               15 |             28 |         1.87 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Xsmiu6         |                                |               13 |             28 |         2.15 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Qsmiu6         |                                |               11 |             28 |         2.55 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/Stmiu6         |                                |               13 |             28 |         2.15 |
+|  clk_IBUF_BUFG | u_cm0/u_logic/S5nax6_i_1_n_0 |                                |               15 |             28 |         1.87 |
+|  clk_IBUF_BUFG | hready                       | u_cm0/sys_sync_reg[1]          |               18 |             42 |         2.33 |
+|  clk_IBUF_BUFG |                              |                                |               55 |             99 |         1.80 |
+|  clk_IBUF_BUFG |                              | u_cm0/sys_sync_reg[1]          |              114 |            173 |         1.52 |
++----------------+------------------------------+--------------------------------+------------------+----------------+--------------+
+
+

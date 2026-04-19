@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+E:/vivado_workspace/soc_week4/soc_week4.sim/sim_1/impl/func/xsim/tb_hy_soc_func_impl.v,1775556222,verilog,,E:/vivado_workspace/soc_week4/soc_week4.srcs/sim_1/imports/tb/tb_hy_soc.v,,CORTEXM0INTEGRATION;ahb_sram;cm0_rst_sync;cortexm0ds_logic;glbl;hy_soc,,,,,,,,
+E:/vivado_workspace/soc_week4/soc_week4.srcs/sim_1/imports/tb/tb_hy_soc.v,1775442290,verilog,,,,tb_hy_soc,,,,,,,,

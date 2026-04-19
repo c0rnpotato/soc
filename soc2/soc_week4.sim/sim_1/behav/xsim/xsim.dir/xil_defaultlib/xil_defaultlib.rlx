@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sim_1/imports/tb/tb_hy_soc.v,1775929684,verilog,,,,tb_hy_soc,,,../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/common/ahb_sram/ahb_sram.v,1775898359,verilog,,/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/common/rst/cm0_rst_sync.v,,ahb_sram,,,../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/common/arm_ip/cm0_ds/CORTEXM0INTEGRATION.v,1775287072,verilog,,/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/edu/lab0_m0_sram/rtl/ahb_interconnect.v,,CORTEXM0INTEGRATION,,,../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/common/arm_ip/cm0_ds/cortexm0ds_logic.v,1775287072,verilog,,/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/edu/lab0_m0_sram/rtl/hy_soc.v,,cortexm0ds_logic,,,../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/common/rst/cm0_rst_sync.v,1775287072,verilog,,/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/common/arm_ip/cm0_ds/cortexm0ds_logic.v,,cm0_rst_sync,,,../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/edu/lab0_m0_sram/rtl/ahb_interconnect.v,1775287200,verilog,,/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/common/ahb_sram/ahb_sram.v,,ahb_interconnect,,,../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sources_1/imports/hy-soc_lab/edu/lab0_m0_sram/rtl/hy_soc.v,1775928666,verilog,,/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sim_1/imports/tb/tb_hy_soc.v,,hy_soc,,,../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,

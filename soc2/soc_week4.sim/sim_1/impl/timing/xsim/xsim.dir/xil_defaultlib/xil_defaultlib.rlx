@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.sim/sim_1/impl/timing/xsim/tb_hy_soc_time_impl.v,1775961863,verilog,,/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sim_1/imports/tb/tb_hy_soc.v,,CORTEXM0INTEGRATION;ahb_sram;cm0_rst_sync;cortexm0ds_logic;glbl;hy_soc,,,../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc2/soc_week4.srcs/sim_1/imports/tb/tb_hy_soc.v,1775442290,verilog,,,,tb_hy_soc,,,../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
