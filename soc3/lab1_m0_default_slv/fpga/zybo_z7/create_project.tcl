@@ -23,7 +23,7 @@ set part       "xc7z020clg400-1"
 # Paths relative to this script
 set script_dir [file dirname [file normalize [info script]]]
 set rtl_dir    [file normalize "$script_dir/../../rtl"]
-set common_dir [file normalize "$script_dir/../../../../common"]
+set common_dir [file normalize "$script_dir/../../../common"]
 set arm_ip_dir [file normalize "$common_dir/arm_ip"]
 set sim_dir    [file normalize "$script_dir/../../sim"]
 set tb_dir     [file normalize "$script_dir/../../tb"]

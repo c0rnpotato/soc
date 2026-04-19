@@ -1,0 +1,12 @@
+*.vcd
+*.fsdb
+*.log
+*.jou
+*.str
+*.cache/
+*.hw/
+*.ip_user_files/
+obj_dir/
+simv
+simv.daidir/
+csrc/
